@@ -37,7 +37,7 @@ public class Binarysearch{
             }
             else
             {
-                System.out.println(key+"found at"+pos+"postion in the array");
+                System.out.println("search successful"+key+"found at position"+pos);
             }
     }
 }
