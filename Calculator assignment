@@ -1,0 +1,86 @@
+import java.io.*;
+import java.util.Scanner;
+public class Calculator
+{
+public static void main(String args[])
+{
+int a,b;
+char c;
+Scanner obj=new Scanner(System.in);
+System.out.println("Enter 2 integers and operator to perform Arthimatic operations");
+System.out.println("Enter 1st number:");
+a=obj.nextInt();
+System.out.println("Enter 2nd number:");
+b=obj.nextInt();
+System.out.println("Enter Operator:");
+c=obj.next().charAt(0);
+switch(c)
+{
+case '+':System.out.println("Addition "+(a+b));
+break;
+case '-':System.out.println("Substraction: "+(a-b));
+break;
+case '*':System.out.println("Multiplication:"+(a*b));
+break;
+case '/':System.out.println("Division: "+(a/b));
+break;
+default:System.out.println("Enter a correct operator.");
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.io.*;
+import java.util.Scanner;
+public class Primenumbers
+{
+public static void main(String args[])
+{
+int a,b,count=0;
+Scanner obj=new Scanner(System.in);
+System.out.println("Enter a starting positive integer:");
+a=obj.nextInt();
+System.out.println("Enter a ending positive integer:");
+b=obj.nextInt();
+System.out.println("The prime numbers in the range of "+a+" and "+b+" are:");
+for(int i=a;i<=b;i++)
+{
+if(i==1)
+continue;
+if(i>0)
+count=0;
+for(int j=2;j<i;j++)
+{
+if(i%j==0)
+count=1;
+}
+if(count==0)
+System.out.println(i);
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
