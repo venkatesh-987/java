@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class Trycactch_5{
+public class Trycactch_6{
 public static void main(String args[]){
 int a=5,b=0,c;
 int arr[]=new int[5];
